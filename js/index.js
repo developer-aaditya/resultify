@@ -20,14 +20,14 @@ loginButton.addEventListener('click', () => {
     for (let id = 0; id < studentData.length; id++) {
         if (password == studentData[id].password && rollNo == studentData[id].rollNo) {
             localStorage.setItem('id-No', id);
-            window.location.assign("../html/grade.html");
+            window.location.assign("html/grade.html");
             alert('Successful log-in');
             count = true;
             return;
         }
     }
     if(count == false){
-        window.location.assign("../html/index.html");
+        window.location.assign("html/index.html");
         alert('Check your Roll-No & Password');
     }
 })
