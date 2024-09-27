@@ -1,0 +1,394 @@
+:root {
+    --bg : rgb(255, 22, 61);
+    --black : rgb(44, 44, 44);
+    --grey : rgba(95, 95, 95, 0.658);
+    --white : white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.left-container {
+    width: 43%;
+    height: 100%;
+    /* background-color: rgba(199, 199, 199, 0.178); */
+    background-color: #fff;
+}
+.left-container .nav-left-container {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid rgba(177, 177, 177, 0.219);
+}
+.left-container .nav-left-container .college-icon {
+    width: 100px;
+    margin: 10px;
+}
+.left-container .nav-left-container .college-icon img {
+    width: 100px;
+    border-radius: 50%;
+}
+.left-container .nav-left-container .college-info .college-name {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 700;
+}
+.left-container .nav-left-container .college-info .college-address {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+.left-container .nav-left-container .college-info .college-name-short {
+    text-align: center;
+}
+.left-container .student-info {
+    height: 50px;
+    font-size: 1.1rem;
+    text-align: center ;
+    font-weight: 600;
+    color: var(--black);
+    padding-top: 13px;
+    border-bottom: 2px solid rgba(177, 177, 177, 0.219);
+}
+.left-container .student-profile {
+    width: 90%;
+    background-color: #fff;
+    margin: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #00000010,
+            -3px -3px 8px #00000010;
+}
+.left-container .student-profile .profile-photo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-container .student-profile .profile-photo img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.100);
+}
+.left-container .student-profile .info-container {
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-container .student-profile .info-container .info {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: var(--grey);
+    padding-left: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.100),
+                -2px -2px 5px inset rgba(0, 0, 0, 0.100);
+}
+.right-container {
+    width: 56%;
+    box-shadow: -3px 3px 5px #00000010;
+}
+.right-container .nav-right-container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px #0000002d;
+    transform: scale(1.01);
+    padding-right: 10px;
+}
+.right-container .nav-right-container .nav-logo-name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-left: 30px;
+}
+.right-container .nav-right-container .nav-icons {
+    width: 80px;
+    height: 100%;
+    color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-solid {
+    cursor: pointer;
+    color: var(--black);
+}
+.right-container-body {
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.right-container-body .exam-type {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin: 10px 0 5px 30px;
+}
+.right-container-body .exam-type .exam {
+    width: 150px;
+    height: 30px;
+    border: 2px solid var(--grey);
+    font-size: 1rem;
+    color: var(--grey);
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 10px 10px 0;
+    margin: 10px 0 10px 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.marks-container {
+    width: 95%;
+    margin-left: 4.5%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.07),
+                -1px -1px 7px rgba(0, 0, 0, 0.07);
+    background-color: var(--white);
+}
+.thead {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+    border-radius: 20px;
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.07);
+}
+.thead .th {
+    width: 25%;
+    text-align: center;
+}
+.tbody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tbody .tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tbody .th-in {
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+}
+.tbody .td, .th-in {
+    width: 25%;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.186);
+}
+.upper-percent-shower {
+    display: none;
+}
+.percent-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.percent-container .inner-card {
+    min-width: 200px;
+    height: 200px;
+    position: relative;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.100),
+                -2px -2px 5px inset rgba(0, 0, 0, 0.100);
+    align-items: center;
+}
+.percent-container .inner-card .percentage-writer{
+    position: absolute;
+    left: 75px;
+    font-size: 2rem;
+    color: var(--bg);
+    font-weight: 700;
+}
+.percent-container .inner-card .percent {
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.percent-container .inner-card .percent svg {
+    width: 150px;
+    height: 150px;
+}
+.percent-container .inner-card .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: var(--grey);
+    transform: translate(5px, 5px);
+}
+.percent-container .inner-card .percent svg circle:nth-child(2){
+    stroke: var(--bg);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+}
+.percent-container .percent-shower {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.percent-container .percent-shower .percent-name, .percent-name {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.100),
+                -2px -2px 5px inset rgba(0, 0, 0, 0.100);
+    color: var(--grey);
+    font-size: 1.1rem;
+}
+.percent-container .percent-shower .percent-name:nth-child(1){
+    padding-right: 10px;
+}
+.percent-container .percent-shower .percent-name:nth-child(2){
+    padding-left: 10px;
+}
+.percent-container .percent-shower .percent-name .fa-solid {
+    color: var(--grey);
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.primary-image {
+    width: 55vw;
+    height: 40vw;
+    background: url(../Vector/Project_74-21.jpg);
+    filter: opacity(0.8);
+    background-size: 100% 100%;
+}
+
+
+@media(max-width: 1050px){
+    .upper-percent-shower {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .upper-percent-shower #exam-percent, #other-percent {
+        width: 200px;
+    }
+    .percent-container {
+        justify-content: space-around;
+    }
+    .percent-container .percent-shower{
+        display: none;
+    }
+}
+@media(max-width: 900px){
+    body {
+        flex-direction: column;
+    }
+    .left-container {
+        width: 100%;
+        height: 70%;
+    }
+    .right-container {
+        width: 100%;
+        height: 70%;
+    }
+    .marks-container {
+        width: 92%;
+    }
+    .upper-percent-shower {
+        display: none;
+    }
+    .percent-container .percent-shower{
+        display: flex;
+    }
+    .primary-image {
+        height: 80vw;
+        width: 90vw;
+    }
+}
+@media(max-width: 720px) {
+    .upper-percent-shower {
+        display: flex;
+    }
+    .percent-container .percent-shower{
+        display: none;
+    }
+    .primary-image {
+        width: 100vw;
+    }
+}
+@media(max-width: 630px) {
+    .primary-image {
+        width: 100vw;
+        height: 60vw;
+    }
+}
+@media(max-width: 500px) {
+    .right-container-body .exam-type .exam {
+        font-size: 0.8rem;
+        padding: 6px 0 0 0;
+    }
+    .left-container .nav-left-container {
+        height: 100px;
+        translate: -5px;
+    }
+    .left-container .nav-left-container .college-icon {
+        width: 90px;
+    }
+    .left-container .nav-left-container .college-icon img {
+        width: 90px;
+        border-radius: 50%;
+    }
+    .primary-image {
+        width: 100vw;
+        height: 60vw;
+    }
+}
+@media(max-width: 450px) {
+    .percent-container .inner-card {
+        min-width: 170px;
+        height: 170px;
+    }
+    .percent-container .inner-card .percentage-writer {
+        font-size: 1.5rem;
+    }
+    .percent-container .inner-card .percentage-writer{
+        left: 69px;
+    }.primary-image {
+        width: 100vw;
+        height: 60vw;
+    }
+}
+

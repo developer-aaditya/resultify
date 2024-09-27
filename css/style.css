@@ -1,0 +1,247 @@
+:root {
+    --bg : rgb(255, 22, 61);
+    --bg1 : rgb(255, 0, 218);
+    --black : rgb(44, 44, 44);
+    --grey : rgba(211, 211, 211, 0.553);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.left-container {
+    height: 100%;
+    width: 50%;
+    color: white;
+    background-color: var(--bg1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color-scheme: 10%;
+    text-align: center;
+}
+.left-container .background-container {
+    width: 100%;
+}
+.left-container .background-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.left-container .heading-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.left-container .heading-text span {
+    display : block;
+}
+.left-container .body-text {
+    font-size: 1.2rem;
+}
+
+.right-container {
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-name {
+    position: absolute;
+    top: 30px;
+    font-size : 2rem;
+    font-weight: 700;
+    right: 40px;
+    color: var(--bg);
+}
+
+.form-container {
+    min-width: 400px;
+}
+
+.form-heading {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.form-input-and-button {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    padding: 13px 150px 13px 13px;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid var(--grey);
+}
+input:focus {
+    border-color: var(--bg);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#show-pass, #hide-pass {
+    position: absolute;
+    top: 103px;
+    right: 20px;
+    color: var(--grey);
+}
+
+#login-btn {
+    padding: 15px;
+    margin: 20px 2px;
+    font-size: 1rem;
+    border: 2px solid var(--black);
+    border-radius: 30px;
+    font-weight: 600;
+    color: var(--black);
+    background-color: white;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: var(--bg);
+    color: #fff;
+    border-color: white;
+}
+
+#login-btn:active {
+    transform: scale(0.99);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--black);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+#sign-up {
+    color: var(--bg);
+    margin-right: 5px;
+}
+
+
+@media(max-width: 900px){
+    .left-container .heading-text {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 850px){
+    .container {
+        flex-direction: column;
+    }
+    .left-container {
+        height: 50%;
+        width: 100%;
+        flex-direction: row;
+    }
+    .left-container .background-container {
+        width: 100%;
+    }
+    .left-container .background-container img {
+        height: 100%;
+        margin-top: -30px;
+        width: 100%;
+    }
+    .left-container .text-container {
+        margin-left: -100px;
+        margin-right: 20px;
+    }
+    .right-container {
+        height: 50%;
+        width: 100%;
+    }
+    .logo-name {
+        top: 30px;
+        right: 40px;
+        font-size : 1rem;
+        font-weight: 600;
+    }
+    .form-container {
+        min-width: 600px;
+    }
+    .form-heading {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-left: 5px;
+    }
+    input {
+        padding: 10px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+    #show-pass, #hide-pass {
+        top: 92px;
+        right: 20px;
+    }
+}
+
+@media(max-width: 650px){
+    .left-container .background-container img {
+        margin-left: -100px;
+    }
+}
+@media(max-width: 630px){
+    .form-container {
+        min-width: 450px;
+    }
+}
+@media(max-width: 530px){
+    .left-container {
+        flex-direction: column;
+    }
+    .left-container .background-container img {
+        margin-left: 0;
+    }
+    .left-container .text-container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -70px;
+    }
+}
+@media(max-width: 480px){
+    .form-container {
+        min-width: 333px;
+    }
+    .left-container .text-container {
+        margin-top: -50px;
+    }
+    .left-container .heading-text {
+        font-size: 1.8rem;
+    }
+}
+@media(max-width: 415px){
+    .left-container {
+        height: 40%;
+    }
+}
